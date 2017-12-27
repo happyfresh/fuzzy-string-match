@@ -15,4 +15,9 @@
 #   See the License for the specific language governing permissions and
 #   limitations under the License.
 #
-require 'fuzzystringmatch/inline/jarowinkler'
+begin
+  require 'inline'
+  require 'fuzzystringmatch/inline/jarowinkler'
+rescue LoadError
+  puts 'Add RubyInline to your Gemfile to run native C version'
+end

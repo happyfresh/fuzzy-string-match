@@ -37,6 +37,5 @@ Gem::Specification.new do |s|
   s.summary = "fuzzy string matching library"
 
   s.add_development_dependency(%q<rspec>, [">= 3.1.0"])
-  s.add_runtime_dependency(%q<RubyInline>, [">= 3.8.6"])
 end
 
